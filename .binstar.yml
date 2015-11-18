@@ -10,7 +10,7 @@ engine:
 
 
 script:
-  - conda build conda.recipe
+  - conda build conda-recipe
 
 after_success:
   - conda convert -p win-32 /opt/miniconda/conda-bld/linux-64/pydoe-*.tar.bz2 -o /opt/miniconda/conda-bld
